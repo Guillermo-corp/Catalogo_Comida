@@ -1,0 +1,104 @@
+{
+    "locations": [
+    {
+    "id": 0,
+    "name": "Garnacha al estilo de Rinconada",
+    "city": "Veracruz",
+    "state": "VER",
+    "photo": "https://oem.com.mx/diariodexalapa/img/13465997/1724082933/BASE_LANDSCAPE/1200/CLAUSURA%20GARNACHA%20RINCONADA-7.jpg",
+    "availableUnits": 4,
+    "wifi": true,
+    "laundry": true
+    },
+    {
+    "id": 1,
+    "name": "Gorditas de nata",
+    "city": "Pachuca",
+    "state": "HGO",
+    "photo": "https://www.codigosanluis.com/wp-content/uploads/2021/09/gorditas-de-nata-e1632238962535.jpg",
+    "availableUnits": 0,
+    "wifi": false,
+    "laundry": true
+    },
+    {
+    "id": 2,
+    "name": "Tlayudas Oaxaqueñas",
+    "city": "Oaxaca",
+    "state": "OAX",
+    "photo": "https://phantom-marca-mx.unidadeditorial.es/c5ec9c37d7381d57fe8557a4959f74e4/resize/828/f/jpg/mx/assets/multimedia/imagenes/2023/10/02/16962798283162.jpg",
+    "availableUnits": 1,
+    "wifi": false,
+    "laundry": false
+    },
+    {
+    "id": 3,
+    "name": "Tortas Ahogadas",
+    "city": "Guadalajara",
+    "state": "GDL",
+    "photo": "https://productoschata.com/wp-content/uploads/elementor/thumbs/Torta-de-carnitas-chata-pvqn4uassuenzxnis6tr1utdbgjmy2gfqzzq4vupo0.jpg",
+    "availableUnits": 1,
+    "wifi": true,
+    "laundry": false
+    },
+    {
+    "id": 4,
+    "name": "Ceviche de caracol",
+    "city": "Quintana Roo",
+    "state": "QR",
+    "photo": "https://www.recetashonduras.com/base/stock/Recipe/ceviche-de-caracol/ceviche-de-caracol_web.jpg",
+    "availableUnits": 1,
+    "wifi": true,
+    "laundry": false
+    },
+    {
+    "id": 5,
+    "name": "Cochinita pibil",
+    "city": "Yucatan",
+    "state": "YUC",
+    "photo": "https://www.gob.mx/cms/uploads/article/main_image/25270/blog-cochinita-22-sep-fb.jpg",
+    "availableUnits": 2,
+    "wifi": true,
+    "laundry": true
+    },
+    {
+    "id": 6,
+    "name": "Pan de cazón",
+    "city": "Campeche",
+    "state": "CAM",
+    "photo": "https://campeche.travel/wp-content/uploads/2020/02/pan_de_cazon_campeche_banner.jpg",
+    "availableUnits": 5,
+    "wifi": true,
+    "laundry": true
+    },
+    {
+    "id": 7,
+    "name": "Hopeful Housing Solutions",
+    "city": "Oakland",
+    "state": "CA",
+    "photo": "https://angular.io/assets/images/tutorials/faa/r-architecture-GGupkreKwxA-unsplash.jpg",
+    "availableUnits": 2,
+    "wifi": true,
+    "laundry": true
+    },
+    {
+    "id": 8,
+    "name": "Seriously Safe Towns",
+    "city": "Oakland",
+    "state": "CA",
+    "photo": "https://angular.io/assets/images/tutorials/faa/saru-robert-9rP3mxf8qWI-unsplash.jpg",
+    "availableUnits": 10,
+    "wifi": false,
+    "laundry": false
+    },
+    {
+    "id": 9,
+    "name": "Capital Safe Towns",
+    "city": "Portland",
+    "state": "OR",
+    "photo": "https://angular.io/assets/images/tutorials/faa/webaliser-_TPTXZd9mOo-unsplash.jpg",
+    "availableUnits": 6,
+    "wifi": true,
+    "laundry": true
+    }
+    ]
+    }
