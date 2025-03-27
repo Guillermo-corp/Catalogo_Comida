@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { HomeComponent } from './home/home.component';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { MatTabsModule } from '@angular/material/tabs';
+
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     HomeComponent,
     RouterLink,
     RouterOutlet,
-    MatTabsModule, //Esto agrega la pestaña de navegación
+    
   ],
   template: `
     <main>
@@ -20,20 +20,6 @@ import { MatTabsModule } from '@angular/material/tabs';
       </header>
       </a>
       <section class="content">
-      <mat-tab-group>
-          <mat-tab label="Información General">
-            <p>Contenido del Tab 1</p>
-          </mat-tab>
-          <mat-tab label="Recetas">
-            <p>Contenido del Tab 2</p>
-          </mat-tab>
-          <mat-tab label="Reseñas de Usuarios">
-            <p>Contenido del Tab 3</p>
-          </mat-tab>
-          <mat-tab label="Curiosidades">
-            <p>Contenido del Tab 4</p>
-          </mat-tab>
-        </mat-tab-group>
         <router-outlet></router-outlet>
       </section>
     </main>

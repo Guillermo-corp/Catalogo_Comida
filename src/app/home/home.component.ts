@@ -1,14 +1,14 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HousingLocationComponent } from '../housing-location/housing-location.component';
-import { HousingLocation } from '../housinglocation';
-import { HousingService } from '../housing.service';
+import { FoodLocationComponent } from '../Food-location/Food-location.component';
+import { FoodLocation } from '../Foodlocation';
+import { FoodService } from '../Food.service';
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
     CommonModule,
-    HousingLocationComponent
+    FoodLocationComponent
   ],
   template: `
     <section>
@@ -18,34 +18,34 @@ import { HousingService } from '../housing.service';
       </form>
     </section>
     <section class="results">
-      <app-housing-location
-        *ngFor="let housingLocation of filteredLocationList"
-        [housingLocation]="housingLocation">
-      </app-housing-location>
+      <app-Food-location
+        *ngFor="let FoodLocation of filteredLocationList"
+        [FoodLocation]="FoodLocation">
+      </app-Food-location>
     </section>
   `,
   styleUrls: ['./home.component.css'],
 })
 
 export class HomeComponent {
-  housingLocationList: HousingLocation[] = [];
-  housingService: HousingService = inject(HousingService);
-  filteredLocationList: HousingLocation[] = [];
+  FoodLocationList: FoodLocation[] = [];
+  FoodService: FoodService = inject(FoodService);
+  filteredLocationList: FoodLocation[] = [];
 
   constructor() {
-    this.housingService.getAllHousingLocations().then((housingLocationList: HousingLocation[]) => {
-      this.housingLocationList = housingLocationList;
-      this.filteredLocationList = housingLocationList;
+    this.FoodService.getAllFoodLocations().then((FoodLocationList: FoodLocation[]) => {
+      this.FoodLocationList = FoodLocationList;
+      this.filteredLocationList = FoodLocationList;
     });
   }
 
   filterResults(text: string) {
     if (!text) {
-      this.filteredLocationList = this.housingLocationList;
+      this.filteredLocationList = this.FoodLocationList;
       return;
     }
-    this.filteredLocationList = this.housingLocationList.filter(
-      housingLocation => housingLocation?.city.toLowerCase().includes(text.toLowerCase())
+    this.filteredLocationList = this.FoodLocationList.filter(
+      FoodLocation => FoodLocation?.city.toLowerCase().includes(text.toLowerCase())
     );
   }
 }

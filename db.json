@@ -2,7 +2,7 @@
     "locations": [
     {
     "id": 0,
-    "name": "Garnacha al estilo de Rinconada",
+    "name": "Garnachas",
     "city": "Veracruz",
     "state": "VER",
     "photo": "https://oem.com.mx/diariodexalapa/img/13465997/1724082933/BASE_LANDSCAPE/1200/CLAUSURA%20GARNACHA%20RINCONADA-7.jpg",
@@ -13,8 +13,8 @@
     {
     "id": 1,
     "name": "Gorditas de nata",
-    "city": "Pachuca",
-    "state": "HGO",
+    "city": "Hidalgo",
+    "state": "PACH",
     "photo": "https://www.codigosanluis.com/wp-content/uploads/2021/09/gorditas-de-nata-e1632238962535.jpg",
     "availableUnits": 0,
     "wifi": false,
@@ -33,7 +33,7 @@
     {
     "id": 3,
     "name": "Tortas Ahogadas",
-    "city": "Guadalajara",
+    "city": "Jalisco",
     "state": "GDL",
     "photo": "https://productoschata.com/wp-content/uploads/elementor/thumbs/Torta-de-carnitas-chata-pvqn4uassuenzxnis6tr1utdbgjmy2gfqzzq4vupo0.jpg",
     "availableUnits": 1,
@@ -43,7 +43,7 @@
     {
     "id": 4,
     "name": "Ceviche de caracol",
-    "city": "Quintana Roo",
+    "city": "Cancún",
     "state": "QR",
     "photo": "https://www.recetashonduras.com/base/stock/Recipe/ceviche-de-caracol/ceviche-de-caracol_web.jpg",
     "availableUnits": 1,
@@ -53,7 +53,7 @@
     {
     "id": 5,
     "name": "Cochinita pibil",
-    "city": "Yucatan",
+    "city": "Chetumal",
     "state": "YUC",
     "photo": "https://www.gob.mx/cms/uploads/article/main_image/25270/blog-cochinita-22-sep-fb.jpg",
     "availableUnits": 2,
@@ -72,30 +72,30 @@
     },
     {
     "id": 7,
-    "name": "Hopeful Housing Solutions",
-    "city": "Oakland",
-    "state": "CA",
-    "photo": "https://angular.io/assets/images/tutorials/faa/r-architecture-GGupkreKwxA-unsplash.jpg",
+    "name": "Asado de boda",
+    "city": "Zacatecas",
+    "state": "ZAC",
+    "photo": "https://img1.wsimg.com/isteam/ip/9e2a012a-785d-490d-85f3-08da7e0d008b/A099844F-513F-4DB7-BCC2-77B4875B0415_L0_001-1_.jpg",
     "availableUnits": 2,
     "wifi": true,
     "laundry": true
     },
     {
     "id": 8,
-    "name": "Seriously Safe Towns",
-    "city": "Oakland",
-    "state": "CA",
-    "photo": "https://angular.io/assets/images/tutorials/faa/saru-robert-9rP3mxf8qWI-unsplash.jpg",
+    "name": "Cabrito asado",
+    "city": "Nuevo León",
+    "state": "MON",
+    "photo": "https://cdn.shopify.com/s/files/1/0517/8825/1314/files/Support5-El_origen_del_cabrito_asado_estilo_Monterrey_y_como_prepararlo.jpg?v=1649112116",
     "availableUnits": 10,
     "wifi": false,
     "laundry": false
     },
     {
     "id": 9,
-    "name": "Capital Safe Towns",
-    "city": "Portland",
-    "state": "OR",
-    "photo": "https://angular.io/assets/images/tutorials/faa/webaliser-_TPTXZd9mOo-unsplash.jpg",
+    "name": "Machaca de mantarraya",
+    "city": "Cabo San Lucas",
+    "state": "BCS",
+    "photo": "https://i.ytimg.com/vi/axhNCiENJUo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDYIXIGICuZ-vloOu_FFuD-YL6yDg",
     "availableUnits": 6,
     "wifi": true,
     "laundry": true
