@@ -5,11 +5,12 @@ import { FoodLocation } from '../Foodlocation';
 import { FoodService } from '../Food.service';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-details',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, MatTabsModule], //Esto agrega la pestaña de navegación],
+  imports: [CommonModule, ReactiveFormsModule, MatTabsModule, MatIconModule], //Esto agrega la pestaña de navegación],
   template: `
     <article>
     <img class="listing-photo" [src]="FoodLocation?.photo"
@@ -20,6 +21,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     </section>
     <mat-tab-group>
       <mat-tab label="Información General">
+       <mat-icon>info</mat-icon>
         <section>
       <h3><strong>Descripción</strong></h3>
       <p>La garnacha es un antojito mexicano muy popular, especialmente en los estados de Veracruz y Oaxaca. 
@@ -41,7 +43,35 @@ import { MatTabsModule } from '@angular/material/tabs';
     </section>
       </mat-tab>
       <mat-tab label="Recetas">
-        <p>Contenido del Tab 2</p>
+      <mat-icon>restaurant_menu</mat-icon>
+      <section>
+      <h3><strong>Receta de Garnachas Veracruzanas</strong></h3>
+      <h4>Ingredientes</h4>
+      <p><i>Para la masa:</i></p>
+      <ul>
+         <li>2 tazas de masa de maíz</li>
+         <li>½ taza de agua (ajustar según la textura)</li>
+         <li>½ cucharadita de sal</li>
+         <li>Aceite o manteca para freír</li>
+      </ul>
+      <br>
+      <p>Para la salsa:</p>
+      <ul>
+         <li>1 jitomates</li>
+         <li>¼ de cebolla</li>
+         <li>1 diente de ajo</li>
+         <li>4 chiles guajillos secos (sin semillas y remojados)</li>
+         <li>½ taza de agua</li>
+      </ul>
+      <br>
+      <p>Para el relleno:</p>
+      <ul>
+         <li>250 g de carne de res deshebrada (falda o suadero)</li>
+         <li>½ cebolla blanca</li>
+         <li>1 diente de ajo</li>
+        <li>Sal al gusto</li>
+      </ul>
+      </section>
       </mat-tab>
       <mat-tab label="Reseñas de Usuarios">
         <p>Contenido del Tab 3</p>
