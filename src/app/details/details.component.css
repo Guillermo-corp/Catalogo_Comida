@@ -78,3 +78,45 @@
   ::ng-deep .mat-tab-label-active {
     color: #ff4081;
   }
+
+  section p {
+    margin-bottom: 16px; /* Ajusta el espacio entre párrafos */
+  }
+
+  /* filepath: d:\Catalogo_Comida\src\app\details\details.component.css */
+article {
+  background-color: #f0f8ff; /* Color de fondo (opcional) */
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/004/847/742/small_2x/a-lakeside-walkway-with-beautiful-mountain-scenery-in-the-background-in-anime-style-vector.jpg'); /* Ruta de la imagen */
+  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen */
+  min-height: 100vh;
+  color:#000000
+}
+
+.reviews-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.review-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rating {
+  display: flex;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.rating mat-icon {
+  color: #e0e0e0; /* Color de estrellas vacías */
+}
+
+.rating mat-icon.filled {
+  color: #ffc107; /* Color de estrellas llenas */
+}

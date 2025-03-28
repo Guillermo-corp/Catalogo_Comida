@@ -8,7 +8,23 @@
     "photo": "https://oem.com.mx/diariodexalapa/img/13465997/1724082933/BASE_LANDSCAPE/1200/CLAUSURA%20GARNACHA%20RINCONADA-7.jpg",
     "availableUnits": 4,
     "wifi": true,
-    "laundry": true
+    "laundry": true,
+    "description": "La garnacha es un antojito mexicano muy popular.",
+    "origin": "Veracruz y Oaxaca",
+    "varieties": ["Sopes", "Tlacoyos", "Huaraches", "Chalupas"],
+    "recipe": {
+        "ingredients": ["2 tazas de masa de maíz", "½ taza de agua", "½ cucharadita de sal", "Aceite para freír"],
+        "preparation": "Mezcla los ingredientes, forma las garnachas y fríelas."
+    },
+    "reviews": [
+        {
+        "user": "Juan Pérez",
+        "date": "2023-10-01",
+        "comment": "¡Delicioso!",
+        "rating": 5
+        }
+    ],
+    "curiosities": "Se cree que tienen influencias indígenas y españolas."
     },
     {
     "id": 1,
@@ -18,7 +34,23 @@
     "photo": "https://www.codigosanluis.com/wp-content/uploads/2021/09/gorditas-de-nata-e1632238962535.jpg",
     "availableUnits": 0,
     "wifi": false,
-    "laundry": true
+    "laundry": true,
+    "description": "Dulce tradicional mexicano hecho con nata y harina.",
+    "origin": "Hidalgo",
+    "varieties": ["Con azúcar", "Con cajeta", "Con chocolate"],
+    "recipe": {
+        "ingredients": ["2 tazas de harina", "1 taza de nata", "½ taza de azúcar", "1 cucharadita de vainilla"],
+        "preparation": "Mezcla los ingredientes, forma las gorditas y cocínalas en un comal."
+    },
+    "reviews": [
+        {
+        "user": "Ana López",
+        "date": "2023-09-15",
+        "comment": "Perfectas para el desayuno.",
+        "rating": 4
+        }
+    ],
+    "curiosities": "Se suelen vender en ferias y mercados."
     },
     {
     "id": 2,
@@ -28,7 +60,23 @@
     "photo": "https://phantom-marca-mx.unidadeditorial.es/c5ec9c37d7381d57fe8557a4959f74e4/resize/828/f/jpg/mx/assets/multimedia/imagenes/2023/10/02/16962798283162.jpg",
     "availableUnits": 1,
     "wifi": false,
-    "laundry": false
+    "laundry": false,
+    "description": "Tortilla grande y crujiente con diversos ingredientes.",
+    "origin": "Oaxaca",
+    "varieties": ["Con tasajo", "Con chorizo", "Con cecina"],
+    "recipe": {
+        "ingredients": ["1 tlayuda", "Frijoles refritos", "Carne al gusto", "Quesillo", "Salsa"],
+        "preparation": "Unta los frijoles en la tlayuda, agrega los ingredientes y calienta."
+    },
+    "reviews": [
+        {
+        "user": "Carlos Gómez",
+        "date": "2023-08-20",
+        "comment": "Un sabor único.",
+        "rating": 5
+        }
+    ],
+    "curiosities": "Se considera un platillo emblemático de Oaxaca."
     },
     {
     "id": 3,
@@ -38,7 +86,23 @@
     "photo": "https://productoschata.com/wp-content/uploads/elementor/thumbs/Torta-de-carnitas-chata-pvqn4uassuenzxnis6tr1utdbgjmy2gfqzzq4vupo0.jpg",
     "availableUnits": 1,
     "wifi": true,
-    "laundry": false
+    "laundry": false,
+    "description": "Torta bañada en salsa picante.",
+    "origin": "Guadalajara, Jalisco",
+    "varieties": ["Con carnitas", "Con pollo", "Con res"],
+    "recipe": {
+        "ingredients": ["1 bolillo", "Carnitas", "Salsa picante", "Cebolla"],
+        "preparation": "Rellena el bolillo con carnitas y báñalo en salsa."
+    },
+    "reviews": [
+        {
+        "user": "Luis Martínez",
+        "date": "2023-07-10",
+        "comment": "Muy picante pero deliciosa.",
+        "rating": 4
+        }
+    ],
+    "curiosities": "Se dice que fueron inventadas por un vendedor en Guadalajara."
     },
     {
     "id": 4,
@@ -48,7 +112,23 @@
     "photo": "https://www.recetashonduras.com/base/stock/Recipe/ceviche-de-caracol/ceviche-de-caracol_web.jpg",
     "availableUnits": 1,
     "wifi": true,
-    "laundry": false
+    "laundry": false,
+    "description": "Ceviche preparado con caracol fresco.",
+    "origin": "Caribe Mexicano",
+    "varieties": ["Con limón", "Con naranja agria", "Con aguacate"],
+    "recipe": {
+        "ingredients": ["Caracol fresco", "Jugo de limón", "Cebolla", "Tomate", "Cilantro"],
+        "preparation": "Corta el caracol en trozos, mezcla con los ingredientes y refrigera."
+    },
+    "reviews": [
+        {
+        "user": "María Fernández",
+        "date": "2023-06-05",
+        "comment": "Muy fresco y sabroso.",
+        "rating": 5
+        }
+    ],
+    "curiosities": "Es un platillo típico de la región costera."
     },
     {
     "id": 5,
@@ -58,7 +138,23 @@
     "photo": "https://www.gob.mx/cms/uploads/article/main_image/25270/blog-cochinita-22-sep-fb.jpg",
     "availableUnits": 2,
     "wifi": true,
-    "laundry": true
+    "laundry": true,
+    "description": "Carne de cerdo marinada y cocida en hojas de plátano.",
+    "origin": "Yucatán",
+    "varieties": ["Con tortillas", "Con panucho", "Con salbute"],
+    "recipe": {
+        "ingredients": ["Carne de cerdo", "Achiote", "Jugo de naranja agria", "Hojas de plátano"],
+        "preparation": "Marina la carne, envuélvela en hojas de plátano y cocina."
+    },
+    "reviews": [
+        {
+        "user": "Pedro Ramírez",
+        "date": "2023-05-15",
+        "comment": "Un clásico de la cocina mexicana.",
+        "rating": 5
+        }
+    ],
+    "curiosities": "Se cocina tradicionalmente en un horno bajo tierra."
     },
     {
     "id": 6,
@@ -68,7 +164,23 @@
     "photo": "https://campeche.travel/wp-content/uploads/2020/02/pan_de_cazon_campeche_banner.jpg",
     "availableUnits": 5,
     "wifi": true,
-    "laundry": true
+    "laundry": true,
+    "description": "Platillo hecho con capas de tortilla y cazón.",
+    "origin": "Campeche",
+    "varieties": ["Con salsa roja", "Con salsa verde"],
+    "recipe": {
+        "ingredients": ["Tortillas", "Cazón", "Salsa", "Cilantro"],
+        "preparation": "Coloca capas de tortilla, cazón y salsa, y hornea."
+    },
+    "reviews": [
+        {
+        "user": "Sofía Hernández",
+        "date": "2023-04-10",
+        "comment": "Muy original y delicioso.",
+        "rating": 5
+        }
+    ],
+    "curiosities": "Es un platillo típico de Campeche."
     },
     {
     "id": 7,
@@ -78,7 +190,23 @@
     "photo": "https://img1.wsimg.com/isteam/ip/9e2a012a-785d-490d-85f3-08da7e0d008b/A099844F-513F-4DB7-BCC2-77B4875B0415_L0_001-1_.jpg",
     "availableUnits": 2,
     "wifi": true,
-    "laundry": true
+    "laundry": true,
+    "description": "Guiso de carne en salsa roja.",
+    "origin": "Zacatecas",
+    "varieties": ["Con cerdo", "Con res"],
+    "recipe": {
+        "ingredients": ["Carne", "Chiles secos", "Especias", "Ajo"],
+        "preparation": "Cocina la carne con la salsa y especias."
+    },
+    "reviews": [
+        {
+        "user": "Fernando Ruiz",
+        "date": "2023-03-05",
+        "comment": "Perfecto para celebraciones.",
+        "rating": 5
+        }
+    ],
+    "curiosities": "Se sirve tradicionalmente en bodas y fiestas."
     },
     {
     "id": 8,
@@ -88,7 +216,23 @@
     "photo": "https://cdn.shopify.com/s/files/1/0517/8825/1314/files/Support5-El_origen_del_cabrito_asado_estilo_Monterrey_y_como_prepararlo.jpg?v=1649112116",
     "availableUnits": 10,
     "wifi": false,
-    "laundry": false
+    "laundry": false,
+    "description": "Cabrito cocido al carbón.",
+    "origin": "Monterrey, Nuevo León",
+    "varieties": ["Al pastor", "Al ataúd"],
+    "recipe": {
+        "ingredients": ["Cabrito", "Sal", "Especias"],
+        "preparation": "Sazona el cabrito y cocínalo al carbón."
+    },
+    "reviews": [
+        {
+        "user": "Ricardo Torres",
+        "date": "2023-02-20",
+        "comment": "Un sabor auténtico del norte.",
+        "rating": 5
+        }
+    ],
+    "curiosities": "Es un platillo típico de Monterrey."
     },
     {
     "id": 9,
@@ -98,7 +242,23 @@
     "photo": "https://i.ytimg.com/vi/axhNCiENJUo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDYIXIGICuZ-vloOu_FFuD-YL6yDg",
     "availableUnits": 6,
     "wifi": true,
-    "laundry": true
+    "laundry": true,
+    "description": "Platillo hecho con mantarraya deshidratada.",
+    "origin": "Baja California Sur",
+    "varieties": ["Con huevo", "Con salsa"],
+    "recipe": {
+        "ingredients": ["Mantarraya deshidratada", "Cebolla", "Tomate", "Especias"],
+        "preparation": "Rehidrata la mantarraya y cocina con los ingredientes."
+    },
+    "reviews": [
+        {
+        "user": "Gabriela Moreno",
+        "date": "2023-01-15",
+        "comment": "Muy interesante y sabroso.",
+        "rating": 4
+        }
+    ],
+    "curiosities": "Es un platillo típico de la región costera."
     }
     ]
-    }
+}
