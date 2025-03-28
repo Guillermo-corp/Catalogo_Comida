@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { HomeComponent } from './home/home.component';
 import { RouterLink, RouterOutlet } from '@angular/router';
-
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
     HomeComponent,
     RouterLink,
     RouterOutlet,
-    
+    MatPaginatorModule // Added MatPaginatorModule
   ],
   template: `
     <main>

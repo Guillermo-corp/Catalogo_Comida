@@ -1,14 +1,18 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FoodLocationComponent } from '../Food-location/Food-location.component';
 import { FoodLocation } from '../Foodlocation';
 import { FoodService } from '../Food.service';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatPaginator, PageEvent } from '@angular/material/paginator';
+
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
     CommonModule,
-    FoodLocationComponent
+    FoodLocationComponent,
+    MatPaginatorModule
   ],
   template: `
     <section>
@@ -19,10 +23,16 @@ import { FoodService } from '../Food.service';
     </section>
     <section class="results">
       <app-Food-location
-        *ngFor="let FoodLocation of filteredLocationList"
+        *ngFor="let FoodLocation of paginatedLocationList"
         [FoodLocation]="FoodLocation">
       </app-Food-location>
     </section>
+    <mat-paginator
+      [length]="filteredLocationList.length"
+      [pageSize]="pageSize"
+      [pageSizeOptions]="[5, 10, 20]"
+      (page)="onPageChange($event)">
+    </mat-paginator>
   `,
   styleUrls: ['./home.component.css'],
 })
@@ -31,21 +41,41 @@ export class HomeComponent {
   FoodLocationList: FoodLocation[] = [];
   FoodService: FoodService = inject(FoodService);
   filteredLocationList: FoodLocation[] = [];
+  paginatedLocationList: FoodLocation[] = [];
+  pageSize: number = 6;
+  currentPage: number = 0;
+
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
 
   constructor() {
     this.FoodService.getAllFoodLocations().then((FoodLocationList: FoodLocation[]) => {
       this.FoodLocationList = FoodLocationList;
       this.filteredLocationList = FoodLocationList;
+      this.updatePaginatedList();
     });
   }
 
   filterResults(text: string) {
     if (!text) {
       this.filteredLocationList = this.FoodLocationList;
-      return;
+    } else {
+      this.filteredLocationList = this.FoodLocationList.filter(
+        FoodLocation => FoodLocation?.city.toLowerCase().includes(text.toLowerCase())
+      );
     }
-    this.filteredLocationList = this.FoodLocationList.filter(
-      FoodLocation => FoodLocation?.city.toLowerCase().includes(text.toLowerCase())
-    );
+    this.currentPage = 0;
+    this.updatePaginatedList();
+  }
+
+  onPageChange(event: PageEvent) {
+    this.currentPage = event.pageIndex;
+    this.pageSize = event.pageSize;
+    this.updatePaginatedList();
+  }
+
+  updatePaginatedList() {
+    const startIndex = this.currentPage * this.pageSize;
+    const endIndex = startIndex + this.pageSize;
+    this.paginatedLocationList = this.filteredLocationList.slice(startIndex, endIndex);
   }
 }

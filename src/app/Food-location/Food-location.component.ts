@@ -2,13 +2,16 @@ import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FoodLocation } from '../Foodlocation';
 import { RouterModule } from '@angular/router';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 @Component({
   selector: 'app-Food-location',
   standalone: true,
   imports: [
             CommonModule,
-            RouterModule],
+            RouterModule,
+            MatPaginatorModule // Added MatPaginatorModule for pagination
+           ],
   template: `
     <section class="listing">
       <img class="listing-photo" [src]="FoodLocation.photo" alt="Exterior photo of {{FoodLocation.name}}">
