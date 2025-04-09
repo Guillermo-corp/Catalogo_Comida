@@ -12,7 +12,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     RouterLink,
     RouterOutlet,
     MatPaginatorModule,
-    SidenavComponent // Import SidenavComponent
+    SidenavComponent 
   ],
   template: `
     <main>

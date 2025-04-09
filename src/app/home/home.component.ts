@@ -30,7 +30,7 @@ import { MatPaginator, PageEvent } from '@angular/material/paginator';
     <mat-paginator
       [length]="filteredLocationList.length"
       [pageSize]="pageSize"
-      [pageSizeOptions]="[5, 10, 20]"
+      [pageSizeOptions]="[4, 8, 12]"
       (page)="onPageChange($event)">
     </mat-paginator>
   `,
@@ -42,7 +42,7 @@ export class HomeComponent {
   FoodService: FoodService = inject(FoodService);
   filteredLocationList: FoodLocation[] = [];
   paginatedLocationList: FoodLocation[] = [];
-  pageSize: number = 6;
+  pageSize: number = 4;
   currentPage: number = 0;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;

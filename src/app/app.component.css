@@ -7,8 +7,8 @@ main {
 }
 
 .content {
-  flex-grow: 1;
-  padding-left: 260px; /* Adjust to match the sidenav width */
+  flex: 1;
+  padding-left: 60px;
 }
 
 header {
