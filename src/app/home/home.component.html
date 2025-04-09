@@ -1,0 +1,18 @@
+<section class="search-and-results">
+  <form class="search-form">
+    <input type="text" placeholder="Filtrar por ciudad" #filter>
+    <button class="primary" type="button" (click)="filterResults(filter.value)">Buscar</button>
+  </form>
+  <section class="results">
+    <app-Food-location
+      *ngFor="let FoodLocation of paginatedLocationList"
+      [FoodLocation]="FoodLocation">
+    </app-Food-location>
+  </section>
+</section>
+<mat-paginator
+  [length]="filteredLocationList.length"
+  [pageSize]="pageSize"
+  [pageSizeOptions]="[5, 10, 20]"
+  (page)="onPageChange($event)">
+</mat-paginator>

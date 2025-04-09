@@ -1,15 +1,33 @@
 :host {
   --content-padding: 10px;
 }
+
+main {
+  display: flex;
+}
+
+.content {
+  flex-grow: 1;
+  padding-left: 260px; /* Adjust to match the sidenav width */
+}
+
 header {
   display: block;
   height: 60px;
   padding: var(--content-padding);
   box-shadow: 0px 5px 25px var(--shadow-color);
 }
-.content {
+
+.content section {
   padding: var(--content-padding);
 }
+
+@media (max-width: 768px) {
+  .content {
+    padding-left: 0;
+  }
+}
+
 mat-tab-group {
   margin: 20px 0;
 }
