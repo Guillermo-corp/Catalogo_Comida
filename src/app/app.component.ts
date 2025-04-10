@@ -5,6 +5,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatIconModule } from '@angular/material/icon';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -17,27 +18,14 @@ import { MatIconModule } from '@angular/material/icon';
     SidenavComponent,
     MatBadgeModule, 
     MatIconModule,
+    RouterModule,
   ],
-  template: `
-    <main>
-      <app-sidenav></app-sidenav> 
-      <div class="content">
-        <header class="brand-name">
-          <a [routerLink]="['/']">
-            <img class="brand-logo" src="/assets/images.png" alt="logo" aria-hidden="true">
-          </a>
-          <button mat-icon-button matBadge="1" matBadgePosition="above after" matBadgeColor="primary" class="ShoppingCart-button">
-            <mat-icon>shopping_cart_checkout</mat-icon>
-          </button>
-        </header>
-        <section class="content">
-          <router-outlet></router-outlet>
-        </section>
-      </div>
-    </main>
-  `,
+  templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'homes';
 }
+
+
+

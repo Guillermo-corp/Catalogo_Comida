@@ -15,8 +15,7 @@ import { SidenavComponent } from '../sidenav/sidenav.component';
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule, MatTabsModule, MatIconModule, MatCardModule,SidenavComponent ], //Esto agrega la pestaña de navegación],
   template: `
-    <article>
-    <app-sidenav></app-sidenav> 
+    <article> 
       <img class="listing-photo" [src]="FoodLocation?.photo"
         alt="Exterior photo of {{FoodLocation?.name}}"/>
       <section class="listing-description">

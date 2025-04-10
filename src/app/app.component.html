@@ -1,0 +1,14 @@
+<main>
+    <app-sidenav></app-sidenav> 
+    <div class="content">
+      <header class="brand-name">
+        <img class="brand-logo" src="/assets/images.png" alt="logo" aria-hidden="true">
+        <button mat-icon-button matBadge="1" matBadgePosition="above after" matBadgeColor="primary" class="ShoppingCart-button">
+        <mat-icon>shopping_cart_checkout</mat-icon>
+        </button>
+      </header>
+      <section class="content">
+        <router-outlet></router-outlet>
+      </section>
+    </div>
+  </main>
