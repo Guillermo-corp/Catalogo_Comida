@@ -3,6 +3,8 @@ import { HomeComponent } from './home/home.component';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-root',
@@ -12,17 +14,22 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     RouterLink,
     RouterOutlet,
     MatPaginatorModule,
-    SidenavComponent 
+    SidenavComponent,
+    MatBadgeModule, 
+    MatIconModule,
   ],
   template: `
     <main>
-    <app-sidenav></app-sidenav> 
+      <app-sidenav></app-sidenav> 
       <div class="content">
-        <a [routerLink]="['/']">
-          <header class="brand-name">
+        <header class="brand-name">
+          <a [routerLink]="['/']">
             <img class="brand-logo" src="/assets/images.png" alt="logo" aria-hidden="true">
-          </header>
-        </a>
+          </a>
+          <button mat-icon-button matBadge="1" matBadgePosition="above after" matBadgeColor="primary" class="ShoppingCart-button">
+            <mat-icon>shopping_cart_checkout</mat-icon>
+          </button>
+        </header>
         <section class="content">
           <router-outlet></router-outlet>
         </section>

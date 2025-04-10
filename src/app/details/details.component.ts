@@ -7,14 +7,16 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
+import { SidenavComponent } from '../sidenav/sidenav.component'; 
 
 
 @Component({
   selector: 'app-details',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, MatTabsModule, MatIconModule, MatCardModule], //Esto agrega la pestaña de navegación],
+  imports: [CommonModule, ReactiveFormsModule, MatTabsModule, MatIconModule, MatCardModule,SidenavComponent ], //Esto agrega la pestaña de navegación],
   template: `
     <article>
+    <app-sidenav></app-sidenav> 
       <img class="listing-photo" [src]="FoodLocation?.photo"
         alt="Exterior photo of {{FoodLocation?.name}}"/>
       <section class="listing-description">

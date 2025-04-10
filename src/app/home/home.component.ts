@@ -9,6 +9,7 @@ import { MatPaginator, PageEvent } from '@angular/material/paginator';
 @Component({
   selector: 'app-home',
   standalone: true,
+  styleUrls: ['./home.component.css'],
   imports: [
     CommonModule,
     FoodLocationComponent,
@@ -34,7 +35,6 @@ import { MatPaginator, PageEvent } from '@angular/material/paginator';
       (page)="onPageChange($event)">
     </mat-paginator>
   `,
-  styleUrls: ['./home.component.css'],
 })
 
 export class HomeComponent {
